@@ -2,6 +2,8 @@
 Public domain single header fast Fourier transform for arbitrary array sizes,
 in about 100 lines of C code, which should be straightforward to understand.
 
+A C++ implementation using the stdlib `complex` and `vector` is also provided in `rfft.hpp`.
+
 ## Algorithms
 The classic [Cooley-Turkey algorithm](https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm)
 is used in place (without additional allocations) for arrays of size `2^k`.
